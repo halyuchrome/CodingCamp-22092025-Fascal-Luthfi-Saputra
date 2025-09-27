@@ -32,10 +32,23 @@ body {
 }
 
 .nav-logo a {
-    color: white;
+    display: flex;
+    align-items: center;
+    height: 60px;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
+    padding: 5px 0;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.nav-logo a:hover .logo-image {
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
 
 .nav-menu {
@@ -204,6 +217,15 @@ th {
     
     .nav-menu li {
         margin: 0 1rem;
+    }
+    
+    .logo-image {
+        height: 30px;
+        margin: 0 auto;
+    }
+    
+    .nav-logo a {
+        justify-content: center;
     }
     
     .vm-grid {
